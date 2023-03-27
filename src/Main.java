@@ -19,8 +19,11 @@ public class Main {
         product[3].getBestandsWert();
         product[4].lieferung(6);
 
-        for (int x = 0; x < product.length; x++) {
-            System.out.println(product[x].getBestandsWert());
-        }
+        System.out.println("Die gesamten Produkte haben einen Wert von: " +
+                (product[0].getBestandsWert() + product[1].getBestandsWert() +
+                        product[2].getBestandsWert() +
+                        product[3].getBestandsWert() +
+                        product[4].getBestandsWert()) + "€!");
+
     }
 }

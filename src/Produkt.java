@@ -4,6 +4,7 @@ public class Produkt {
     double einkaufspreis;
     int lagerbestand;
 
+
     Produkt(String iName, double iVerkaufspreis, double iEinkaufspreis, int iLagerbestand) {
         name = iName;
         verkaufspreis = iVerkaufspreis;
@@ -29,7 +30,7 @@ public class Produkt {
         return (verkaufspreis * anzahl);
     }
     double getBestandsWert() {
-        return (lagerbestand * einkaufspreis);
+        return lagerbestand * einkaufspreis;
     }
     void schreibe() {
         System.out.println("Produkt: " + name + " Bestand: " + lagerbestand + " EK: " + einkaufspreis + "€ " + "VK: " + verkaufspreis + "€");
